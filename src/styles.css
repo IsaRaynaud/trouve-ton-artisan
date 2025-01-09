@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #00497c;
+    --primary-color-light: #0074c7;
+    --primary-color-dark: #384050;
+    --contrast-color-red: #cd2c2e;
+    --contrast-color-green: #82b864;
+    --background-color: #f1f8fc;
+  }
+
+  .btn-primary {
+        background-color: var(--primary-color-light) !important;
+        border-color: var(--primary-color) !important;
+      }
