@@ -12,6 +12,7 @@ import { PressComponent } from './press/press.component';
 import { PublicProcurementComponent } from './public-procurement/public-procurement.component';
 import { ContactComponent } from './contact/contact.component';
 import { CookiesComponent } from './cookies/cookies.component';
+import { ArtisanProfileComponent } from './artisan-profile/artisan-profile.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CookiesComponent } from './cookies/cookies.component';
     PressComponent,
     PublicProcurementComponent,
     ContactComponent,
-    CookiesComponent
+    CookiesComponent,
+    ArtisanProfileComponent
   ],
   imports: [
     BrowserModule,
