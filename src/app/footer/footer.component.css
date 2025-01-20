@@ -1,3 +1,17 @@
-.bg-light {
+.background-light {
     background-color: var(--primary-color-light);
+    color: white
+}
+
+.text-small{
+    font-size: medium;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
