@@ -3,9 +3,9 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ArtisansService {
   artisans = [
-    [
       {
         "id": "1",
         "name": "Vallis Bellemare",
@@ -211,7 +211,10 @@ export class ArtisansService {
         "top": false
       },
     ]
-  ]
 
   constructor() { }
+
+  getArtisanById(id: string) {
+    return this.artisans.find((artisan) => artisan.id === id);
+  }
 }

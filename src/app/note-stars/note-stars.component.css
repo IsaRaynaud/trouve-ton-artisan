@@ -1,0 +1,13 @@
+.stars {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .blue-star {
+    color: var(--primary-color);
+  }
+  
+  .gray-star {
+    color: gray;
+  }
+  
