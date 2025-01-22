@@ -1,7 +1,7 @@
 <div class="container-fluid">
-    <h1>{{ artisan?.name }}</h1>
-    <div class="row">
-        <div class="col-lg-7">
+    <h1 class="mb-5">{{ artisan?.name }}</h1>
+    <div class="row p-2">
+        <div class="col-lg-6">
             <div class="row justify-content-center">
                 <div class="stars">
                     <span
@@ -23,8 +23,38 @@
                 <p class="text-center">{{ artisan?.website }}</p>
             </div>
         </div>
-        <div class="col-lg-5">
-            Formulaire de contact!!!
+        <div class="col-lg-6">
+            <form class="border-form p-3">
+                <h2 class="text-center mb-2">Formulaire de contact</h2>
+                <div class="mb-3">
+                    <label for="inputName" class="form-label">Nom :</label>
+                    <input type="text" class="form-control">
+                  </div>
+                <div class="mb-3">
+                  <label for="inputEmail" class="form-label">E-mail :</label>
+                  <input type="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="textarea" class="form-label">Votre message à l'artisan :</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">En cochant cette case, vous acceptez que l'artisan/entreprise utilise vos données afin de pouvoir vous répondre.</label>
+                </div>
+                <button type="submit" class="btn btn-classic">Envoyer</button>
+              </form>
         </div>
     </div>
+</div>
+<div>
+    <form class="contact-form" (submit)="sendEmail($event)">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+      </form>
 </div>

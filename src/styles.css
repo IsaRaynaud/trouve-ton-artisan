@@ -27,7 +27,7 @@ body p {
   font-size: 0.9rem;
 }
 
-.btn-primary {
+.btn-classic {
     background-color: var(--primary-color-light) !important;
     border-color: var(--primary-color) !important;
 }

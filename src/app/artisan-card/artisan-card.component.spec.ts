@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArtisanSCardComponent } from './artisan-card.component';
+import { ArtisanCardComponent } from './artisan-card.component';
 
-describe('ArtisanSCardComponent', () => {
-  let component: ArtisanSCardComponent;
-  let fixture: ComponentFixture<ArtisanSCardComponent>;
+describe('ArtisanCardComponent', () => {
+  let component: ArtisanCardComponent;
+  let fixture: ComponentFixture<ArtisanCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ArtisanSCardComponent]
+      declarations: [ArtisanCardComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ArtisanSCardComponent);
+    fixture = TestBed.createComponent(ArtisanCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

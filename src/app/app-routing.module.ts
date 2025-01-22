@@ -23,7 +23,6 @@ const routes: Routes = [
   { path: "marches-publics", component: PublicProcurementComponent },
   { path: "contact", component:ContactComponent },
   { path: "gestion-cookies", component: CookiesComponent },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
