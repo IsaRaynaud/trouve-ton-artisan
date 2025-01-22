@@ -1,20 +1,30 @@
 <div class="container-fluid">
-    <h1 class="text-center">{{ artisan?.name }}</h1>
+    <h1>{{ artisan?.name }}</h1>
     <div class="row">
         <div class="col-lg-7">
-            <div class="row">
-                <app-note-stars></app-note-stars>
-                <div class="row">
-                    <div class="col-lg-3 border-custom">
-                        <h3>{{ artisan?.speciality }}</h3>
+            <div class="row justify-content-center">
+                <div class="stars">
+                    <span
+                      *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+                      [ngClass]="{'blue-star': i + 1 <= +artisan.note, 'gray-star': i + 1 > +artisan.note}">
+                      ★
+                    </span>
+                  </div>
+                <div class="row justify-content-around mb-4">
+                    <div class="col-lg-3 border-custom d-flex align-items-center justify-content-center">
+                        <p class="text-center p-1 subtitle">{{ artisan?.specialty }}</p>
                     </div>
-                    <div class="col-lg-3 border-custom">
-                        <h3>{{ artisan?.location }}</h3>
+                    <div class="col-lg-3 border-custom d-flex align-items-center justify-content-center">
+                        <p class="text-center p-1 subtitle">{{ artisan?.location }}</p>
                     </div>
                 </div>
-                <h3>Le professionnel en quelques mots</h3>
+                <h2>Le professionnel en quelques mots</h2>
                 <p>{{ artisan?.about }}</p>
+                <p class="text-center">{{ artisan?.website }}</p>
             </div>
+        </div>
+        <div class="col-lg-5">
+            Formulaire de contact!!!
         </div>
     </div>
 </div>

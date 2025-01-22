@@ -1,13 +1,33 @@
 :root {
-    --primary-color: #00497c;
-    --primary-color-light: #0074c7;
-    --primary-color-dark: #384050;
+    --main-color: #00497c;
+    --main-color-light: #0074c7;
+    --main-color-dark: #384050;
     --contrast-color-red: #cd2c2e;
     --contrast-color-green: #82b864;
     --background-color: #f1f8fc;
-  }
+}
 
-  .btn-primary {
-        background-color: var(--primary-color-light) !important;
-        border-color: var(--primary-color) !important;
-      }
+/* Mettre les polices */
+
+body h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--main-color);
+}
+
+body h2 {
+  font-size: 1.75rem;
+}
+
+body h3 {
+  font-size: 1rem;
+}
+
+body p {
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color-light) !important;
+    border-color: var(--primary-color) !important;
+}

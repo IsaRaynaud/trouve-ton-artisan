@@ -83,7 +83,7 @@ export class ArtisansService {
         "name": "Boutot & fils",
         "specialty": "Menuisier",
         "note": "4.7",
-        "location": "Bourg-en-bresse",
+        "location": "Bourg-en-Bresse",
         "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend ante sem, id volutpat massa fermentum nec. Praesent volutpat scelerisque mauris, quis sollicitudin tellus sollicitudin. ",
         "email":"boutot-menuiserie@gmail.com",
         "website":"https://boutot-menuiserie.com",

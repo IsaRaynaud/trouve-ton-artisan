@@ -1,0 +1,21 @@
+.border-custom {
+    border: solid 0.15rem var(--main-color-light);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+.stars {
+    font-size: 48px;
+    cursor: pointer;
+  }
+  
+  .blue-star {
+    color: var(--main-color);
+  }
+  
+  .gray-star {
+    color: gray;
+  }
+  

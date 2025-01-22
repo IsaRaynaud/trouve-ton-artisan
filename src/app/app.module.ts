@@ -14,11 +14,10 @@ import { PublicProcurementComponent } from './public-procurement/public-procurem
 import { ContactComponent } from './contact/contact.component';
 import { CookiesComponent } from './cookies/cookies.component';
 import { ArtisanProfileComponent } from './artisan-profile/artisan-profile.component';
-import { NoteStarsComponent } from './note-stars/note-stars.component';
 
 import { ArtisansService } from './artisans.service';
 import { HomeComponent } from './home/home.component';
-import { ArtisanSCardComponent } from './artisan-scard/artisan-scard.component';
+import { ArtisanCardComponent } from './artisan-card/artisan-card.component';
 
 @NgModule({
   declarations: [
@@ -33,9 +32,8 @@ import { ArtisanSCardComponent } from './artisan-scard/artisan-scard.component';
     ContactComponent,
     CookiesComponent,
     ArtisanProfileComponent,
-    NoteStarsComponent,
     HomeComponent,
-    ArtisanSCardComponent
+    ArtisanCardComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +41,7 @@ import { ArtisanSCardComponent } from './artisan-scard/artisan-scard.component';
   ],
   providers: [
     ArtisansService,
-    provideClientHydration()
+    //provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })

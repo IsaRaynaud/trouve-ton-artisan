@@ -16,9 +16,9 @@ export class ArtisanProfileComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id'); // Récupère l'ID depuis l'URL
+    const id = this.route.snapshot.paramMap.get('id');
     if (id) {
-      this.artisan = this.artisanService.getArtisanById(id); // Charge l'artisan
+      this.artisan = this.artisanService.getArtisanById(id);
     }
   }
 }
