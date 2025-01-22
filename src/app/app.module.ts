@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -12,6 +13,11 @@ import { PressComponent } from './press/press.component';
 import { PublicProcurementComponent } from './public-procurement/public-procurement.component';
 import { ContactComponent } from './contact/contact.component';
 import { CookiesComponent } from './cookies/cookies.component';
+import { ArtisanProfileComponent } from './artisan-profile/artisan-profile.component';
+
+import { ArtisansService } from './artisans.service';
+import { HomeComponent } from './home/home.component';
+import { ArtisanCardComponent } from './artisan-card/artisan-card.component';
 
 @NgModule({
   declarations: [
@@ -24,14 +30,18 @@ import { CookiesComponent } from './cookies/cookies.component';
     PressComponent,
     PublicProcurementComponent,
     ContactComponent,
-    CookiesComponent
+    CookiesComponent,
+    ArtisanProfileComponent,
+    HomeComponent,
+    ArtisanCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    provideClientHydration()
+    ArtisansService,
+    //provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })
