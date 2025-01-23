@@ -28,6 +28,6 @@ body p {
 }
 
 .btn-classic {
-    background-color: var(--primary-color-light) !important;
-    border-color: var(--primary-color) !important;
+    background-color: var(--main-color-light) !important;
+    color: white;
 }
