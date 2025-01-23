@@ -217,4 +217,12 @@ export class ArtisansService {
   getArtisanById(id: string) {
     return this.artisans.find((artisan) => artisan.id === id);
   }
+
+  getArtisansByCategory(category: string) {
+    return this.artisans.filter(artisan => artisan.category === category);
+  }
+
+  getArtisansByTop(top: boolean) {
+    return this.artisans.filter(artisan => artisan.top === top || String(artisan.top) === String(top));
+  }
 }

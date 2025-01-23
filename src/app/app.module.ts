@@ -18,6 +18,11 @@ import { ArtisanProfileComponent } from './artisan-profile/artisan-profile.compo
 import { ArtisansService } from './artisans.service';
 import { HomeComponent } from './home/home.component';
 import { ArtisanCardComponent } from './artisan-card/artisan-card.component';
+import { BuildingArtisansComponent } from './building-artisans/building-artisans.component';
+import { ServiceArtisansComponent } from './service-artisans/service-artisans.component';
+import { ManufacturingArtisansComponent } from './manufacturing-artisans/manufacturing-artisans.component';
+import { FoodArtisansComponent } from './food-artisans/food-artisans.component';
+import { MonthlyTopArtisansComponent } from './monthly-top-artisans/monthly-top-artisans.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,12 @@ import { ArtisanCardComponent } from './artisan-card/artisan-card.component';
     CookiesComponent,
     ArtisanProfileComponent,
     HomeComponent,
-    ArtisanCardComponent
+    ArtisanCardComponent,
+    BuildingArtisansComponent,
+    ServiceArtisansComponent,
+    ManufacturingArtisansComponent,
+    FoodArtisansComponent,
+    MonthlyTopArtisansComponent
   ],
   imports: [
     BrowserModule,

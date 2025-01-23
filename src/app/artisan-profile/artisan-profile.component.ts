@@ -32,10 +32,10 @@ export class ArtisanProfileComponent implements OnInit {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          console.log('E-mail envoyé avec succès !');
         },
         (error) => {
-          console.log('FAILED...', (error as EmailJSResponseStatus).text);
+          console.log('Une erreur est survenue : ', (error as EmailJSResponseStatus).text);
         },
       );
   }

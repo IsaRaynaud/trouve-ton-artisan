@@ -1,0 +1,23 @@
+<h2>Les artisans du mois</h2>
+<div class="container">
+  <div class="row">
+  <div *ngFor="let artisan of monthlyTopArtisans" class="col-md-4 mb-3">
+    <div class="border-card p-3">
+    <div class="card-body text-center">
+      <h3><a [routerLink]="['/fiche-artisan', artisan.id]">{{ artisan.name }}</a></h3>
+      <div class="stars">
+        <span
+          *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+          [ngClass]="{'blue-star': i + 1 <= +artisan.note, 'gray-star': i + 1 > +artisan.note}">
+          ★
+        </span>
+      </div>
+      <div class="row d-flex justify-content-evenly">
+        <div class="col">{{ artisan.specialty }}</div>
+        <div class="col">{{ artisan.location }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

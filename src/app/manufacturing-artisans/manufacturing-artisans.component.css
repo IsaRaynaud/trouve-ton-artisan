@@ -1,0 +1,16 @@
+.border-card {
+    border: 2px solid #00467c !important;
+}
+
+.stars {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .blue-star {
+    color: var(--main-color);
+  }
+  
+  .gray-star {
+    color: gray;
+  }
