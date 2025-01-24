@@ -15,6 +15,7 @@ import { BuildingArtisansComponent } from './building-artisans/building-artisans
 import { ServiceArtisansComponent } from './service-artisans/service-artisans.component';
 import { ManufacturingArtisansComponent } from './manufacturing-artisans/manufacturing-artisans.component';
 import { FoodArtisansComponent } from './food-artisans/food-artisans.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: "services", component: ServiceArtisansComponent},
   { path: "fabrication", component: ManufacturingArtisansComponent },
   { path: "alimentation", component: FoodArtisansComponent},
+  { path: "resultats-recherche", component:SearchResultsComponent},
   { path: "mentions-legales", component: LegalComponent },
   { path: "donnees-personnelles", component: PersonalDataComponent },
   { path: "accessibilite", component: AccessibilityComponent },

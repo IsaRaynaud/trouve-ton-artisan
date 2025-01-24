@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -23,6 +23,8 @@ import { ServiceArtisansComponent } from './service-artisans/service-artisans.co
 import { ManufacturingArtisansComponent } from './manufacturing-artisans/manufacturing-artisans.component';
 import { FoodArtisansComponent } from './food-artisans/food-artisans.component';
 import { MonthlyTopArtisansComponent } from './monthly-top-artisans/monthly-top-artisans.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 @NgModule({
   declarations: [
@@ -43,10 +45,13 @@ import { MonthlyTopArtisansComponent } from './monthly-top-artisans/monthly-top-
     ServiceArtisansComponent,
     ManufacturingArtisansComponent,
     FoodArtisansComponent,
-    MonthlyTopArtisansComponent
+    MonthlyTopArtisansComponent,
+    SearchBarComponent,
+    SearchResultsComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [

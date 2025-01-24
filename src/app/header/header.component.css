@@ -1,0 +1,5 @@
+.header-border {
+    border-width: 2px;
+    border-color: var(--main-color-light);
+    border-bottom-style: solid;    
+}
