@@ -1,15 +1,10 @@
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg header-border mb-5">
     <div class="container-fluid">
         <div class="row">
       <a class="navbar-brand" href="#">
-        <img src="../../assets/images/Logo.png" class="rounded mx-auto d-block" alt="logo">
+        <img src="../../assets/images/Logo.webp" class="rounded mx-auto d-block" alt="logo" />
       </a>
-      <form class="d-flex" role="search">
-        <input class="form-control" type="search" placeholder="Cherchez un professionnel" aria-label="Search">
-        <button class="btn btn-primary" type="submit">
-            <i class="fa-solid fa-right-to-bracket"></i>
-        </button>
-      </form>
+      <app-search-bar (searchEvent)="onSearch($event)"></app-search-bar>
     </div>
     <div class="row">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,16 +13,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Bâtiment</a>
+            <a [routerLink]="['/batiment']" class="nav-link">Bâtiment</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a [routerLink]="['/services']" class="nav-link">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Fabrication</a>
+            <a [routerLink]="['/fabrication']" class="nav-link">Fabrication</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Alimentation</a>
+            <a [routerLink]="['/alimentation']" class="nav-link">Alimentation</a>
           </li>
         </ul>
       </div>

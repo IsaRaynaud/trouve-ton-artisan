@@ -1,3 +1,16 @@
+.stars {
+    font-size: 48px;
+    cursor: pointer;
+  }
+  
+.blue-star {
+    color: var(--main-color);
+  }
+  
+.gray-star {
+    color: gray;
+  }
+  
 .border-custom {
     border: solid 0.15rem var(--main-color-light);
 }
@@ -6,16 +19,6 @@
     font-size: 1.2rem;
 }
 
-.stars {
-    font-size: 48px;
-    cursor: pointer;
-  }
-  
-  .blue-star {
-    color: var(--main-color);
-  }
-  
-  .gray-star {
-    color: gray;
-  }
-  
+.border-form {
+    border: solid 0.5rem var(--main-color);
+}

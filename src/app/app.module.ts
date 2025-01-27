@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -18,6 +18,14 @@ import { ArtisanProfileComponent } from './artisan-profile/artisan-profile.compo
 import { ArtisansService } from './artisans.service';
 import { HomeComponent } from './home/home.component';
 import { ArtisanCardComponent } from './artisan-card/artisan-card.component';
+import { BuildingArtisansComponent } from './building-artisans/building-artisans.component';
+import { ServiceArtisansComponent } from './service-artisans/service-artisans.component';
+import { ManufacturingArtisansComponent } from './manufacturing-artisans/manufacturing-artisans.component';
+import { FoodArtisansComponent } from './food-artisans/food-artisans.component';
+import { MonthlyTopArtisansComponent } from './monthly-top-artisans/monthly-top-artisans.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
+import { NotFound404Component } from './not-found404/not-found404.component';
 
 @NgModule({
   declarations: [
@@ -33,10 +41,19 @@ import { ArtisanCardComponent } from './artisan-card/artisan-card.component';
     CookiesComponent,
     ArtisanProfileComponent,
     HomeComponent,
-    ArtisanCardComponent
+    ArtisanCardComponent,
+    BuildingArtisansComponent,
+    ServiceArtisansComponent,
+    ManufacturingArtisansComponent,
+    FoodArtisansComponent,
+    MonthlyTopArtisansComponent,
+    SearchBarComponent,
+    SearchResultsComponent,
+    NotFound404Component
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [
