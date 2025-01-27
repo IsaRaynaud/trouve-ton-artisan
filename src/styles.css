@@ -29,5 +29,5 @@ body p {
 
 .btn-classic {
     background-color: var(--main-color-light) !important;
-    color: white;
+    color: white !important;
 }

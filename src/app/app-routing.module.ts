@@ -16,6 +16,7 @@ import { ServiceArtisansComponent } from './service-artisans/service-artisans.co
 import { ManufacturingArtisansComponent } from './manufacturing-artisans/manufacturing-artisans.component';
 import { FoodArtisansComponent } from './food-artisans/food-artisans.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
+import { NotFound404Component } from './not-found404/not-found404.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: "marches-publics", component: PublicProcurementComponent },
   { path: "contact", component:ContactComponent },
   { path: "gestion-cookies", component: CookiesComponent },
+  { path: "**", component: NotFound404Component},
 ];
 
 @NgModule({

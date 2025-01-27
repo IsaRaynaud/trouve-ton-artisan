@@ -25,6 +25,7 @@ import { FoodArtisansComponent } from './food-artisans/food-artisans.component';
 import { MonthlyTopArtisansComponent } from './monthly-top-artisans/monthly-top-artisans.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
+import { NotFound404Component } from './not-found404/not-found404.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { SearchResultsComponent } from './search-results/search-results.componen
     FoodArtisansComponent,
     MonthlyTopArtisansComponent,
     SearchBarComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    NotFound404Component
   ],
   imports: [
     BrowserModule,
