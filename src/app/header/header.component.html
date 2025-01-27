@@ -1,31 +1,40 @@
-  <nav class="navbar navbar-expand-lg header-border mb-5">
-    <div class="container-fluid">
-        <div class="row">
-      <a class="navbar-brand" href="#">
-        <img src="../../assets/images/Logo.webp" class="rounded mx-auto d-block" alt="logo" />
-      </a>
-      <app-search-bar (searchEvent)="onSearch($event)"></app-search-bar>
-    </div>
+<nav class="navbar navbar-expand-lg header-border mb-5">
+  <div class="container">
     <div class="row">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a [routerLink]="['/batiment']" class="nav-link">Bâtiment</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/services']" class="nav-link">Services</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/fabrication']" class="nav-link">Fabrication</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/alimentation']" class="nav-link">Alimentation</a>
-          </li>
-        </ul>
+      <div class="col-lg-11">
+        <a class="navbar-brand" href="#">
+          <img src="../../assets/images/Logo.webp" class="img-fluid" alt="logo" />
+        </a>
+      </div>
+      <div class="col-lg-1">
+        <div class=" ms-auto">
+          <app-search-bar (searchEvent)="onSearch($event)"></app-search-bar>
+        </div>
       </div>
     </div>
+    <div class="row mt-3">
+      <div class="col-12 text-center">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between">
+            <li class="nav-item">
+              <a [routerLink]="['/batiment']" class="nav-link">Bâtiment</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/services']" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/fabrication']" class="nav-link">Fabrication</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/alimentation']" class="nav-link">Alimentation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </nav>
+  </div>
+</nav>

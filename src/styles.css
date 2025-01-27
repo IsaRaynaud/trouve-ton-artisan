@@ -31,3 +31,8 @@ body p {
     background-color: var(--main-color-light) !important;
     color: white !important;
 }
+
+body li {
+  font-size: 1.2rem;
+  color: var(--main-color-dark) !important;
+}
