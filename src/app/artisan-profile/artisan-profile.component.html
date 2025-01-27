@@ -26,6 +26,9 @@
         <div class="col-lg-6">
             <form class="border-form p-3" (submit)="sendEmail($event)">
                 <h2 class="text-center mb-2">Formulaire de contact</h2>
+                <div *ngIf="successMessage" class="alert alert-success">
+                  {{ successMessage }}
+                </div>
                 <div class="mb-3">
                     <label for="inputName" class="form-label">Nom :</label>
                     <input type="text" class="form-control" name="user_name" required>

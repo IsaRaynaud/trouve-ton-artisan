@@ -10,6 +10,8 @@ import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 })
 export class ArtisanProfileComponent implements OnInit {
   artisan: any;
+  successMessage: string | null = null;
+  errorMessage: string | null = null;
 
   constructor(
     private artisanService: ArtisansService,
@@ -32,10 +34,10 @@ export class ArtisanProfileComponent implements OnInit {
       })
       .then(
         () => {
-          console.log('E-mail envoyé avec succès !');
+          this.successMessage = 'Votre message a bien été envoyé !';
         },
         (error) => {
-          console.log('Une erreur est survenue : ', (error as EmailJSResponseStatus).text);
+          this.errorMessage = 'Une erreur est survenue. Veuillez essayer ultérieurement. ';
         },
       );
   }
