@@ -2,6 +2,8 @@
     border: 2px solid #00467c !important;
 }
 
+/* Gradation par les étoiles */
+
 .stars {
     font-size: 24px;
     cursor: pointer;

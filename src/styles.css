@@ -8,7 +8,7 @@
     --background-color: #f1f8fc;
 }
 
-/* police */
+/* font */
 @font-face {
   font-family: 'Graphik';
   src: url('assets/fonts/Graphik-Regular-Trial.otf') format('opentype');

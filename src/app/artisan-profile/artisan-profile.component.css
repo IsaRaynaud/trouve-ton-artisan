@@ -1,3 +1,4 @@
+/* Gradation par les étoiles */
 .stars {
     font-size: 48px;
     cursor: pointer;
@@ -11,6 +12,7 @@
     color: gray;
   }
   
+/* Cartouches */
 .border-custom {
     border: solid 0.15rem var(--main-color-light);
 }
@@ -19,6 +21,7 @@
     font-size: 1.2rem;
 }
 
+/* Formulaire */
 .border-form {
     border: solid 0.5rem var(--main-color);
 }

@@ -2,6 +2,7 @@
     <h1 class="mb-5">{{ artisan?.name }}</h1>
     <div class="row p-2">
         <div class="col-lg-6">
+<!-- Gradation par les étoiles -->
             <div class="row">
               <div class="d-flex align-items-center justify-content-center stars mb-2">
                 <span
@@ -11,6 +12,7 @@
                 </span>
               </div>
             </div>
+<!-- Cartouches -->
             <div class="row justify-content-around mb-4">
               <div class="col-lg-3 border-custom d-flex align-items-center justify-content-center">
                 <p class="text-center p-1 subtitle">{{ artisan?.specialty }}</p>
@@ -19,10 +21,12 @@
                 <p class="text-center p-1 subtitle">{{ artisan?.location }}</p>
               </div>
             </div>
+<!-- Présentation -->
             <h2>Le professionnel en quelques mots</h2>
               <p>{{ artisan?.about }}</p>
               <p class="text-center">{{ artisan?.website }}</p>
         </div>
+<!-- Formulaire -->
         <div class="col-lg-6">
             <form class="border-form p-3" (submit)="sendEmail($event)">
                 <h2 class="text-center mb-2">Formulaire de contact</h2>

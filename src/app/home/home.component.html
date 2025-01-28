@@ -1,6 +1,7 @@
 <div class="container-fluid mb-3">
     <h1>Trouve ton artisan !</h1>
     <p id="slogan" class="mb-3">Le site pour toujours dénicher les meilleurs professionnels<br/>en Auvergne - Rhône-Alpes</p>
+<!-- Explication du fonctionnement du site -->
     <h2>Comment trouver l'artisan qu'il vous faut ?</h2>
     <div class="container">
         <div class="row mb-2">
@@ -44,11 +45,13 @@
                 <p>Une réponse vous sera apporté par le professionnnel sous 48 heures ouvrées.</p>
             </div>
             <div class="col-md-6">
-                <img src="" alt="Illustration de la recherche, étape 3" class="d-none d-md-block" />
+                <img src="../../assets/images/explanation-step3.webp" alt="Illustration de la recherche, étape 3" class="d-none d-md-block" />
             </div>
         </div>
     </div>
+<!-- Présentation des arrtisans du mois -->
     <app-monthly-top-artisans></app-monthly-top-artisans>
+<!-- Bouton vers page /liste-artisans -->
     <div class="row justify-content-center">
         <div class="col-3">
         <button type="button" class="btn-classic"><a [routerLink]="['/liste-artisans']">Retrouvez tous les artisans de la Région</a></button>

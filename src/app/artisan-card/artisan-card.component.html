@@ -1,7 +1,9 @@
 <h1>Tous les artisans de la Région</h1>
+  <!-- Outil de recherche -->
 <div class="d-flex justify-content-center mb-3">
   <app-search-bar (searchEvent)="onSearch($event)"></app-search-bar>
 </div>
+  <!-- Liste des cartes artisan -->
 <div class="container">
   <div class="row">
     <div *ngFor="let artisan of artisans" class="col-md-4 mb-3">
