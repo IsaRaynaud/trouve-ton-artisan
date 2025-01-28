@@ -24,7 +24,8 @@ export class SearchResultsComponent {
     this.filteredArtisans = this.artisansService.artisans.filter(artisan =>
       artisan.name.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
       artisan.category.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
-      artisan.location.toLowerCase().includes(this.searchQuery.toLowerCase())
+      artisan.location.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
+      artisan.specialty.toLowerCase().includes(this.searchQuery.toLowerCase())
     );
   }
 }
