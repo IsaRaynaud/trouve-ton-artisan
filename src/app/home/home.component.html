@@ -1,9 +1,60 @@
-<div class="container mb-3">
-<p>Plein de trucs à faire</p>
-</div>
-<app-monthly-top-artisans></app-monthly-top-artisans>
-<div class="row justify-content-center">
-    <div class="col-3">
-    <button type="button" class="btn-classic"><a [routerLink]="['/liste-artisans']">Retrouvez tous les artisans de la Région</a></button>
+<div class="container-fluid mb-3">
+    <h1>Trouve ton artisan !</h1>
+    <p id="slogan" class="mb-3">Le site pour toujours dénicher les meilleurs professionnels<br/>en Auvergne - Rhône-Alpes</p>
+<!-- Explication du fonctionnement du site -->
+    <h2>Comment trouver l'artisan qu'il vous faut ?</h2>
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class=" d-flex align-items-center">
+                <div class="blue-circle me-3">
+                    1
+                </div>
+                <h3>Choisir la catégorie dans le menu</h3>
+            </div>
+                <p>Sélectionner dans le menu la catégorie de l'artisan (bâtiment, services, fabrication, alimentation) pour voir la liste apparaître.</p>
+                <p>Vous pouvez également utiliser l'outil de recherche, en haut de cette page pour trouver des professionnels grâce à un mot-clé (nom, ville, catégorie, spécialité...)</p>
+            </div>
+            <div class="col-md-6">
+                <img src="../../assets/images/explanation-step1.webp" alt="Illustration de la recherche, étape 1" class="d-none d-md-block" />
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <img src="../../assets/images/explanation-step2.webp" alt="Illustration de la recherche, étape 2" class="d-none d-md-block" />
+            </div>
+            <div class="col-md-6">
+                <div class=" d-flex align-items-center">
+                    <div class="blue-circle me-3">
+                    2
+                </div>
+                <h3>Choisir un artisan</h3>
+                </div>
+                <p>Pour lire toutes les informations sur les professionnels, cliquez sur leur nom, une page dédiée s'ouvrira.</p>
+                </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class=" d-flex align-items-center">
+                <div class="blue-circle me-3">
+                    3
+                </div>
+                <h3>Remplir le formulaire de contact</h3>
+                </div>
+                <p>Vous pourrez alors contacter l'artisan via le formulaire. Attention à bien remplir toutes les informations demandées !</p>
+                <p>Une réponse vous sera apporté par le professionnnel sous 48 heures ouvrées.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="../../assets/images/explanation-step3.webp" alt="Illustration de la recherche, étape 3" class="d-none d-md-block" />
+            </div>
+        </div>
+    </div>
+<!-- Présentation des arrtisans du mois -->
+    <app-monthly-top-artisans></app-monthly-top-artisans>
+<!-- Bouton vers page /liste-artisans -->
+    <div class="row justify-content-center">
+        <div class="col-3">
+        <button type="button" class="btn-classic"><a [routerLink]="['/liste-artisans']">Retrouvez tous les artisans de la Région</a></button>
+        </div>
     </div>
 </div>

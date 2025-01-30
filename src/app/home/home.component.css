@@ -2,3 +2,23 @@ a {
     color: white;
     text-decoration: none;
 }
+
+#slogan{
+    color: var(--main-color-dark) !important;
+    font-size: 1.75rem !important;
+    text-align: center;
+    font-style: italic;
+}
+
+.blue-circle {
+    background-color: var(--main-color);
+    border-radius: 50%;
+    color: white;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+}

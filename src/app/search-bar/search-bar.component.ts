@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { ArtisansService } from '../artisans.service';
 
 @Component({
   selector: 'app-search-bar',
@@ -11,11 +12,13 @@ export class SearchBarComponent {
 
   @Output() searchEvent = new EventEmitter<string>();
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,
+    private artisanService: ArtisansService
+  ) {}
 
   onSearch(): void {
     if (this.searchQuery.trim()) {
-      this.searchEvent.emit(this.searchQuery);
+      const results = this.artisanService.getArtisansBySearch(this.searchQuery);
       this.router.navigate(['/resultats-recherche'], { queryParams: { query: this.searchQuery } });    }
   }
 }

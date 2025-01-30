@@ -1,3 +1,4 @@
+/* colors */
 :root {
     --main-color: #00497c;
     --main-color-light: #0074c7;
@@ -7,8 +8,19 @@
     --background-color: #f1f8fc;
 }
 
-/* Mettre les polices */
+/* font */
+@font-face {
+  font-family: 'Graphik';
+  src: url('assets/fonts/Graphik-Regular-Trial.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+h1, h2, h3, p {
+  font-family: 'Graphik', sans-serif;
+}
+
+/* texts */
 body h1 {
   text-align: center;
   font-size: 3.5rem;
@@ -17,10 +29,13 @@ body h1 {
 
 body h2 {
   font-size: 1.75rem;
+  color: var(--main-color);
 }
 
 body h3 {
   font-size: 1rem;
+  font-weight: 600;
+  color: var(--main-color-dark);
 }
 
 body p {
@@ -30,4 +45,9 @@ body p {
 .btn-classic {
     background-color: var(--main-color-light) !important;
     color: white !important;
+}
+
+body li {
+  font-size: 1.2rem;
+  color: var(--main-color-dark) !important;
 }

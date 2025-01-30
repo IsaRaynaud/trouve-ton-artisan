@@ -225,4 +225,14 @@ export class ArtisansService {
   getArtisansByTop(top: boolean) {
     return this.artisans.filter(artisan => artisan.top === top || String(artisan.top) === String(top));
   }
+
+  getArtisansBySearch(query: string) {
+    const lowerQuery = query.toLowerCase();
+    return this.artisans.filter(artisan =>
+      artisan.name.toLowerCase().includes(lowerQuery) ||
+      artisan.specialty.toLowerCase().includes(lowerQuery) ||
+      artisan.category.toLowerCase().includes(lowerQuery) ||
+      artisan.location.toLowerCase().includes(lowerQuery)
+    );
+  }
 }
